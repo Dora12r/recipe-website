@@ -1,4 +1,5 @@
 /* General Styling */
+/* General Styling */
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
@@ -8,76 +9,108 @@ body {
     color: #333;
 }
 
-/* Navbar */
-nav {
+/* Navbar with Blur Effect */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #007acc;
-    color: white;
-    padding: 15px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
-.logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.nav-links li {
-    display: inline;
-}
-
-.nav-links a {
+.navbar a {
     text-decoration: none;
-    color: white;
-    font-size: 1.1rem;
+    color: #333;
+    font-size: 1.2rem;
+    margin: 0 15px;
     transition: 0.3s;
 }
+.navbar a:hover {
+    color: #007acc;
+}
 
-.nav-links a:hover {
-    text-decoration: underline;
+/* Header */
+header {
+    text-align: center;
+    padding: 100px 20px 40px;
+    background: linear-gradient(135deg, #007acc, #004466);
+    color: white;
+    border-bottom: 4px solid #0055a4;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-top: 5px;
 }
 
 /* Blog Layout */
 .blog-container {
-    max-width: 900px;
-    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+.blog-card {
+    width: 350px;
     background: white;
-    padding: 25px;
     border-radius: 10px;
+    overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.blog-post {
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ddd;
-}
-
-.blog-post h2 {
-    font-size: 1.6rem;
-    margin: 0;
-}
-
-.blog-post h2 a {
-    text-decoration: none;
-    color: #007acc;
     transition: 0.3s;
 }
-
-.blog-post h2 a:hover {
-    text-decoration: underline;
+.blog-card:hover {
+    transform: scale(1.05);
 }
-
-.blog-description {
-    font-size: 1.1rem;
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.blog-content {
+    padding: 20px;
+}
+.blog-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.blog-content p {
+    font-size: 1rem;
     color: #666;
-    margin-top: 5px;
 }
 
+/* Buttons */
+button {
+    display: inline-block;
+    background: #007acc;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    background: #0055a4;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #333;
+    color: white;
+    font-size: 1rem;
+    margin-top: 30px;
+}
