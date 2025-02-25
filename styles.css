@@ -8,69 +8,76 @@ body {
     color: #333;
 }
 
-/* Header */
-header {
-    background: linear-gradient(135deg, #007acc, #004466);
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #007acc;
     color: white;
-    text-align: center;
-    padding: 40px 20px;
-    border-bottom: 4px solid #0055a4;
+    padding: 15px 20px;
 }
 
-h1 {
-    font-size: 2.5rem;
-    margin: 0;
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
 }
 
-p {
-    font-size: 1.2rem;
-    margin-top: 5px;
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-/* Section Styling */
-section {
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Blog Layout */
+.blog-container {
     max-width: 900px;
-    margin: 30px auto;
+    margin: 40px auto;
     background: white;
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Lists */
-ul, ol {
-    padding-left: 20px;
-    font-size: 1.1rem;
+.blog-post {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
 }
 
-li {
-    margin: 10px 0;
+.blog-post h2 {
+    font-size: 1.6rem;
+    margin: 0;
 }
 
-/* Buttons */
-button {
-    display: inline-block;
-    background: #007acc;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 6px;
-    font-size: 1.1rem;
-    cursor: pointer;
+.blog-post h2 a {
+    text-decoration: none;
+    color: #007acc;
     transition: 0.3s;
 }
 
-button:hover {
-    background: #0055a4;
+.blog-post h2 a:hover {
+    text-decoration: underline;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 15px;
-    background: #333;
-    color: white;
-    font-size: 1rem;
-    margin-top: 30px;
+.blog-description {
+    font-size: 1.1rem;
+    color: #666;
+    margin-top: 5px;
 }
 
